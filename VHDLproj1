@@ -1,0 +1,19 @@
+--Fatemeh Bimesl Shabestari
+--Page46
+--VHDL
+
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY exercise_46 IS
+PORT (
+	A0, A1, A2, A3, A4, A5, A6, P : IN STD_LOGIC;
+	F                             : OUT STD_LOGIC
+	);
+	
+END ENTITY exercise_46;
+
+ARCHITECTURE LOGIC OF exercise_46 IS
+BEGIN 
+	F <= (A0 XOR A1 XOR A2 XOR A3 XOR A4 XOR A5 XOR A6 XOR P);
+END ARCHITECTURE LOGIC;
